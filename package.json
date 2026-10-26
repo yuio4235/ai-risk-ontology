@@ -1,0 +1,18 @@
+{
+  "name": "ontology-ai-governance-demo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client"],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c cyan,green \"uvicorn --app-dir server app.main:app --reload --host 0.0.0.0 --port 4000\" \"npm run dev -w client\"",
+    "build": "npm run build -w client && python3 -m compileall -q server/app",
+    "test": "npm run test -w client",
+    "start": "uvicorn --app-dir server app.main:app --host 0.0.0.0 --port ${PORT:-4000}",
+    "format": "prettier --write \"client/src/**/*.{ts,tsx}\" \"client/*.json\" package.json README.md docs/superpowers/specs/*.md docs/superpowers/plans/*.md docker-compose.yml",
+    "format:check": "prettier --check \"client/src/**/*.{ts,tsx}\" \"client/*.json\" package.json README.md docs/superpowers/specs/*.md docs/superpowers/plans/*.md docker-compose.yml"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "prettier": "^3.9.10"
+  }
+}

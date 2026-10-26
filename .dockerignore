@@ -1,0 +1,10 @@
+.git
+**/node_modules
+**/dist
+**/coverage
+**/.venv
+**/__pycache__
+.env
+.env.*
+.DS_Store
+.superpowers

@@ -1,0 +1,1002 @@
+:root {
+  color-scheme: light;
+  font-size: 16px;
+  font-weight: 500;
+  --navy: #151515;
+  --navy-soft: #292929;
+  --teal: #db0011;
+  --teal-bright: #f05a64;
+  --muted: #6f6f6f;
+  --border: #dedede;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --gold: #9a7b34;
+  --brand-red: #db0011;
+  --brand-red-dark: #b8000e;
+  --brand-red-wash: #fff1f2;
+  font-family: "DM Sans", sans-serif;
+  color: #1a1a1a;
+  background: #f5f5f5;
+}
+
+body {
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+
+::selection {
+  color: #ffffff;
+  background: #db0011;
+}
+
+:focus-visible {
+  outline: 2px solid #db0011;
+  outline-offset: 2px;
+}
+
+.sidebar {
+  color: #252525;
+  background: #ffffff;
+  border-right: 1px solid #dedede;
+}
+
+.brand-mark {
+  color: #ffffff;
+  background: #db0011;
+  border-color: #db0011;
+  border-radius: 2px;
+}
+
+.brand-name {
+  color: #171717;
+}
+
+.brand-name span {
+  color: #777777;
+}
+
+.workspace-switch {
+  color: #222222;
+  background: #f6f6f6;
+  border-color: #e1e1e1;
+}
+
+.workspace-glyph {
+  color: #db0011;
+  background: #ffe9eb;
+}
+
+.workspace-switch small,
+.profile small {
+  color: #777777;
+}
+
+.workspace-switch > svg,
+.profile-more {
+  color: #696969;
+}
+
+.nav-section-label {
+  color: #777777;
+}
+
+.nav-link {
+  color: #4c4c4c;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #191919;
+  background: #f5f5f5;
+}
+
+.nav-link.active {
+  color: #b8000e;
+  background: #fff1f2;
+  box-shadow: inset 3px 0 #db0011;
+}
+
+.nav-link.active svg {
+  color: #db0011;
+}
+
+.nav-count {
+  color: #5c5c5c;
+  background: #eaeaea;
+}
+
+.sidebar-divider,
+.profile {
+  border-color: #e3e3e3;
+  background-color: #e3e3e3;
+}
+
+.runtime-card {
+  color: #252525;
+  background: #f7f7f7;
+  border-color: #e1e1e1;
+  border-radius: 3px;
+}
+
+.runtime-card-head,
+.runtime-card-line,
+.runtime-status span {
+  color: #666666;
+}
+
+.runtime-status b,
+.runtime-card-line b {
+  color: #222222;
+}
+
+.runtime-progress {
+  background: #e4e4e4;
+}
+
+.runtime-progress i {
+  background: #db0011;
+}
+
+.profile-avatar {
+  color: #b8000e;
+  background: #ffe9eb;
+}
+
+.main-shell {
+  background: #f5f5f5;
+}
+
+.topbar {
+  border-bottom-color: #dedede;
+}
+
+.breadcrumb {
+  color: #6d6d6d;
+}
+
+.breadcrumb b {
+  color: #1c1c1c;
+}
+
+.env-tag {
+  color: #5e5e5e;
+  background: #f7f7f7;
+  border-color: #dedede;
+  border-radius: 2px;
+}
+
+.help-button {
+  color: #333333;
+  border-color: #d5d5d5;
+  border-radius: 2px;
+}
+
+.help-button:hover,
+.top-icon:hover,
+.icon-button:hover {
+  color: #b8000e;
+  background: #fff1f2;
+}
+
+.hero {
+  background: linear-gradient(108deg, #db0011 0%, #c40010 62%, #a9000d 100%);
+  border-radius: 2px;
+}
+
+.hero:after {
+  background-image:
+    linear-gradient(#ffffff0a 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+}
+
+.hero-kicker {
+  color: #ffe3e5;
+}
+
+.hero-kicker-mark,
+.orbit-node {
+  color: #ffffff;
+  background: #ffffff18;
+  border-color: #ffffff50;
+}
+
+.hero h1 span,
+.orbit-center-mark {
+  color: #ffffff;
+}
+
+.hero-copy > p {
+  color: #ffe4e6;
+}
+
+.hero-copy > p b {
+  color: #ffffff;
+}
+
+.hero .button-primary {
+  color: #b8000e;
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.hero .button-primary:hover {
+  color: #8f000b;
+  background: #fff1f2;
+}
+
+.hero .button-ghost {
+  color: #ffffff;
+  background: #ffffff12;
+  border-color: #ffffff80;
+}
+
+.hero-footnote {
+  color: #ffe0e2;
+}
+
+.orbit,
+.orbit-inner,
+.orbit-center {
+  border-color: #ffffff55;
+}
+
+.orbit-center {
+  background: #a9000d;
+}
+
+.orbit-caption {
+  color: #ffe2e4;
+}
+
+.orbit-caption span {
+  background: #ffffff;
+  box-shadow: 0 0 7px #ffffff80;
+}
+
+.button-primary {
+  color: #ffffff;
+  background: #db0011;
+  border-color: #db0011;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.button-primary:hover {
+  background: #b8000e;
+  border-color: #b8000e;
+  box-shadow: 0 3px 10px #db001126;
+}
+
+.button-ghost {
+  color: #333333;
+  border-color: #d5d5d5;
+  border-radius: 2px;
+}
+
+.button-ghost:hover {
+  color: #b8000e;
+  background: #fff7f7;
+  border-color: #d9a5a9;
+}
+
+.metric-card,
+.panel,
+.proof-strip,
+.ontology-summary-card,
+.ontology-workspace,
+.ontology-instance,
+.ontology-property,
+.ontology-triple-list code {
+  border-color: #dedede;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #00000008;
+}
+
+.metric-icon.blue,
+.metric-icon.violet,
+.metric-icon.green,
+.metric-icon.amber {
+  color: #c40010;
+  background: #fff0f1;
+}
+
+.metric-live span,
+.live-pulse,
+.system-status .live-pulse,
+.live-pill i,
+.enabled-state i,
+.ledger-badge i,
+.env-tag i {
+  background: #45836c;
+}
+
+.panel-head h2,
+.proof-intro > b,
+.metric-card > strong {
+  color: #202020;
+}
+
+.text-action,
+.ontology-instance > button {
+  color: #c40010;
+}
+
+.text-action:hover,
+.ontology-instance > button:hover {
+  color: #92000b;
+}
+
+.proof-icon,
+.insight-icon {
+  color: #c40010;
+  background: #fff0f1;
+}
+
+.insight-proof {
+  color: #b8000e !important;
+  background: #fff1f2;
+}
+
+.count-pill,
+.technology-chip {
+  color: #4f4f4f;
+  background: #f1f1f1;
+}
+
+.status-pill.submitted {
+  color: #316c56;
+  background: #eaf3ed;
+}
+
+.signal-icon,
+.signal-1,
+.signal-2 {
+  color: #b8000e;
+  background: #fff0f1;
+}
+
+.signal-score {
+  color: #8f000b;
+}
+
+.ontology-title-badge,
+.ontology-summary-card > span,
+.ontology-type-icon {
+  color: #c40010;
+  background: #fff1f2;
+  border-color: #f0c7ca;
+  border-radius: 3px;
+}
+
+.ontology-focus-switch button.active {
+  color: #b8000e;
+}
+
+.ontology-search button {
+  color: #c40010;
+}
+
+.ontology-key i,
+.ontology-workspace-foot i {
+  background: #db0011;
+}
+
+.ontology-model-svg .ontology-edge.selected .ontology-edge-line,
+.ontology-model-svg .ontology-edge:hover .ontology-edge-line,
+.ontology-model-svg .ontology-edge:focus .ontology-edge-line {
+  stroke: #db0011;
+}
+
+.ontology-edge.selected .ontology-edge-label-bg {
+  fill: #fff1f2;
+  stroke: #e9aeb3;
+}
+
+.ontology-edge.selected .ontology-edge-label,
+.ontology-inspector-header h2,
+.ontology-count-card strong,
+.ontology-triple-list code b {
+  color: #b8000e;
+}
+
+.ontology-class-node:hover > rect,
+.ontology-class-node:focus > rect,
+.ontology-class-node.selected > rect {
+  stroke: #db0011;
+  filter: drop-shadow(0 4px 9px #db001120);
+}
+
+.ontology-node-icon {
+  fill: #fff0f1;
+}
+
+.ontology-node-glyph,
+.ontology-class-node .ontology-node-glyph {
+  fill: #c40010;
+}
+
+.ontology-node-status {
+  fill: #45836c;
+}
+
+.ontology-relation-chip b,
+.ontology-triple b,
+.ontology-honesty-note svg {
+  color: #b8000e;
+}
+
+.ontology-inspector {
+  background: #fafafa;
+}
+
+.ontology-instance > button,
+.ontology-focus-switch button,
+.ontology-search button {
+  border-radius: 2px;
+}
+
+.demo-guide-backdrop {
+  background: #17171799;
+}
+
+.demo-guide {
+  background: #ffffff;
+  box-shadow: -14px 0 40px #00000024;
+}
+
+.demo-guide-mark,
+.demo-guide-step.active .demo-guide-step-number {
+  color: #ffffff;
+  background: #db0011;
+  border-color: #db0011;
+}
+
+.demo-guide-step {
+  border-radius: 2px;
+}
+
+.demo-guide-step.active {
+  border-color: #e8a5ab;
+  background: #fff4f5;
+  box-shadow: none;
+}
+
+.demo-guide-beat {
+  border-color: #e3e3e3;
+  border-radius: 3px;
+  background: linear-gradient(145deg, #ffffff, #fafafa);
+}
+
+.demo-guide-beat > .eyebrow,
+.demo-guide-script > span {
+  color: #b8000e;
+}
+
+.demo-guide-script,
+.demo-guide-proof {
+  border-left-color: #db0011;
+  background: #f7f7f7;
+}
+
+.demo-guide-proof {
+  border-left-color: #777777;
+}
+
+.demo-guide-proof > span {
+  color: #555555;
+}
+
+.demo-guide-footer > .button-primary {
+  background: #db0011;
+}
+
+.modal,
+.detail-drawer {
+  border-radius: 3px;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus,
+.search-box:focus-within,
+.ontology-search:focus-within {
+  border-color: #db0011;
+  box-shadow: 0 0 0 2px #db00111a;
+}
+
+.assessment-note,
+.signal-applicability-note,
+.description-suggestion {
+  border-color: #edc7ca;
+  background: #fff6f6;
+}
+
+.signal-applicability-note svg,
+.description-suggestion > div,
+.description-suggestion > button {
+  color: #b8000e;
+}
+
+.signal-applicability-note svg {
+  color: #db0011;
+}
+
+.description-suggestion > button {
+  border-color: #edc7ca;
+}
+
+.delete-button {
+  border-color: #edc7ca;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Readability pass: raise compact dashboard typography and darken secondary copy. */
+.sidebar {
+  font-size: 14px;
+}
+
+.brand-name {
+  font-size: 15px;
+}
+
+.brand-name span {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+}
+
+.workspace-switch b,
+.profile b {
+  font-size: 13px;
+}
+
+.workspace-switch small,
+.profile small {
+  font-size: 11px;
+}
+
+.nav-section-label {
+  font-size: 10px;
+}
+
+.nav-link {
+  height: 42px;
+  font-size: 13px;
+}
+
+.nav-count {
+  font-size: 11px;
+}
+
+.runtime-card-head,
+.runtime-card-line,
+.runtime-status span {
+  font-size: 11px;
+}
+
+.runtime-status b {
+  font-size: 13px;
+}
+
+.topbar {
+  min-height: 64px;
+}
+
+.breadcrumb,
+.breadcrumb b,
+.system-status {
+  font-size: 12px;
+}
+
+.env-tag {
+  font-size: 10px;
+}
+
+.help-button {
+  min-height: 34px;
+  font-size: 12px;
+}
+
+.page-content {
+  color: #262626;
+}
+
+.page-content
+  :where(p, span, small, th, td, label, button, input, textarea, select, li) {
+  font-size: max(12px, 1em) !important;
+}
+
+.page-content .eyebrow,
+.page-content .hero-kicker,
+.page-content .nav-section-label {
+  font-size: 10px !important;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 3vw, 44px);
+  letter-spacing: -1px;
+}
+
+.hero-kicker {
+  color: #ffffff;
+}
+
+.hero-copy > p,
+.hero-copy > p b,
+.hero-footnote,
+.orbit-caption {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.hero-actions .button-primary,
+.hero-actions .button-ghost {
+  min-height: 42px;
+  padding-inline: 16px;
+  font-size: 14px !important;
+}
+
+.metric-card {
+  min-height: 132px;
+  padding: 16px 17px;
+}
+
+.metric-card > strong {
+  font-size: 30px;
+}
+
+.metric-card > b,
+.panel-head p,
+.proof-step b,
+.proof-step span {
+  font-size: 13px;
+}
+
+.metric-foot,
+.metric-live,
+.proof-intro > span:last-child {
+  color: #555555;
+  font-size: 11px;
+}
+
+.panel-head h2 {
+  font-size: 20px;
+}
+
+.eyebrow {
+  color: #555555;
+}
+
+.text-action,
+.button-primary,
+.button-ghost {
+  min-height: 38px;
+  font-size: 13px;
+}
+
+.ontology-summary-card strong {
+  font-size: 21px;
+}
+
+.ontology-summary-card small,
+.ontology-summary-note,
+.ontology-key,
+.ontology-graph-heading .eyebrow,
+.graph-version,
+.ontology-canvas-caption,
+.ontology-workspace-foot {
+  color: #4f4f4f;
+  font-size: 11px;
+}
+
+.ontology-focus-switch button,
+.ontology-search input,
+.ontology-search button {
+  font-size: 12px;
+}
+
+.ontology-graph-heading b {
+  font-size: 15px;
+}
+
+.ontology-node-title {
+  font-size: 12px;
+}
+
+.ontology-node-count,
+.ontology-edge-label {
+  font-size: 10px;
+}
+
+.ontology-inspector-header h2 {
+  font-size: 19px;
+}
+
+.ontology-detail-copy,
+.ontology-instance > span,
+.ontology-instance > small,
+.ontology-property p,
+.ontology-property small,
+.ontology-relation-chip span,
+.ontology-empty-note,
+.ontology-inspector-empty,
+.ontology-honesty-note {
+  color: #4f4f4f;
+  font-size: 12px;
+}
+
+.ontology-detail-title h3,
+.ontology-property b,
+.ontology-instance > b,
+.ontology-relation-chip b,
+.ontology-instance > button,
+.ontology-triple span,
+.ontology-triple b,
+.ontology-predicate-row > span,
+.ontology-predicate-row > b,
+.ontology-predicate-row > code,
+.ontology-triple-list code {
+  font-size: 12px;
+}
+
+.demo-guide-intro,
+.demo-guide-step-title,
+.demo-guide-step small,
+.demo-guide-script p,
+.demo-guide-proof p {
+  color: #444444;
+  font-size: 13px;
+}
+
+.demo-guide-beat h3 {
+  font-size: 21px;
+}
+
+.demo-guide-script > span,
+.demo-guide-proof > span,
+.demo-guide-pager,
+.demo-guide-footer > .button-primary {
+  font-size: 12px;
+}
+
+.table-toolbar .search-box,
+.table-toolbar .filter-button {
+  min-height: 36px;
+  font-size: 12px;
+}
+
+th {
+  color: #404040;
+  font-size: 10px;
+}
+
+td {
+  color: #333333;
+  font-size: 12px;
+}
+
+.uc-cell b,
+.assessment-count,
+.signal-copy b,
+.activity-content b {
+  color: #242424;
+  font-size: 13px;
+}
+
+.uc-cell small,
+.bu-name,
+.technology-chip,
+.status-pill,
+.assessment-count span,
+.signal-copy span,
+.activity-content span,
+.activity-time,
+.activity-time-col small,
+.activity-time-col span {
+  color: #4f4f4f;
+  font-size: 11px;
+}
+
+.policy-card p,
+.policy-card .policy-description,
+.policy-banner,
+.lifecycle-callout,
+.run-summary-card,
+.history-panel {
+  color: #333333;
+}
+
+.modal :where(p, label, input, textarea, select, button, span, small),
+.detail-drawer :where(p, label, input, textarea, select, button, span, small) {
+  color: #333333;
+  font-size: 13px;
+}
+
+.modal h2,
+.detail-drawer h2 {
+  color: #171717;
+  font-size: 22px;
+}
+
+.field > span,
+.field label,
+.assessment-note,
+.signal-applicability-note {
+  color: #333333;
+  font-size: 13px;
+}
+
+.field input,
+.field textarea,
+.field select {
+  min-height: 42px;
+  color: #222222;
+  font-size: 14px;
+}
+
+.field input::placeholder,
+.field textarea::placeholder,
+.ontology-search input::placeholder {
+  color: #686868;
+  opacity: 1;
+}
+
+.field input,
+.field textarea,
+.field select,
+.search-box,
+.ontology-search {
+  border-color: #bdbdbd;
+}
+
+.page-foot,
+.drawer-actions > span {
+  color: #555555;
+  font-size: 11px;
+}
+
+/* Additional contrast and sizing for compact graph and portfolio surfaces. */
+.page-content
+  :where(p, span, small, th, td, label, button, input, textarea, select, li) {
+  font-size: max(13px, 0.875em) !important;
+}
+
+.page-content .eyebrow,
+.page-content .hero-kicker {
+  font-size: 11px !important;
+}
+
+.metric-foot,
+.metric-live,
+.proof-intro > span:last-child,
+.ontology-summary-card small,
+.ontology-summary-note,
+.ontology-key,
+.ontology-graph-heading .eyebrow,
+.graph-version,
+.ontology-canvas-caption,
+.ontology-workspace-foot,
+.ontology-detail-copy,
+.ontology-instance > span,
+.ontology-instance > small,
+.ontology-property p,
+.ontology-property small,
+.ontology-relation-chip span,
+.ontology-empty-note,
+.ontology-inspector-empty,
+.ontology-honesty-note,
+.uc-cell small,
+.bu-name,
+.technology-chip,
+.status-pill,
+.assessment-count span,
+.signal-copy span,
+.activity-content span,
+.activity-time,
+.activity-time-col small,
+.activity-time-col span,
+.page-foot,
+.drawer-actions > span {
+  color: #3f3f3f;
+}
+
+.ontology-node-title {
+  font-size: 13px;
+}
+
+.ontology-node-count,
+.ontology-edge-label {
+  font-size: 11px;
+}
+
+.ontology-edge-line {
+  stroke: #899096;
+}
+
+.ontology-edge-label {
+  fill: #3f3f3f;
+  font-weight: 700;
+}
+
+.ontology-class-node > rect {
+  stroke: #b9bec1;
+}
+
+.ontology-node-count {
+  fill: #444444;
+}
+
+.ontology-detail-title,
+.ontology-detail-title > span,
+.ontology-count-card > span,
+.ontology-count-card small,
+.ontology-predicate-row > span {
+  color: #424242;
+}
+
+.page-title-row p,
+.subpage-banner span,
+.lifecycle-callout span,
+.policy-banner span,
+.table-count,
+.empty-row,
+.page-foot {
+  color: #3f3f3f;
+}
+
+html,
+body {
+  -webkit-font-smoothing: auto;
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+
+  .topbar-actions {
+    gap: 8px;
+  }
+
+  .system-status {
+    font-size: 0;
+  }
+
+  .help-button {
+    width: 34px;
+    min-width: 34px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-content
+    :where(p, span, small, th, td, label, button, input, textarea, select, li) {
+    font-size: max(13px, 0.875em) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-content
+    :where(p, span, small, th, td, label, button, input, textarea, select, li) {
+    font-size: max(13px, 0.875em) !important;
+  }
+
+  .hero-copy > p,
+  .hero-footnote {
+    font-size: 13px;
+  }
+}
